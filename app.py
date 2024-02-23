@@ -10,8 +10,9 @@ def hello_world():
 
 @app.route("/insert", methods=["POST"])
 def insert():
+    print("Chamada")
     aluno_repository = AlunoRepository()
-    body = request.json()
-
+    body = request.json
+    print("Por enquanto tudo certo")
     aluno_repository.insert_aluno(body["name"])
     return 'OK'

@@ -1,2 +1,1 @@
 from .alunos import Alunos
-
